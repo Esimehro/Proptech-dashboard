@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import img2 from "../assets/images/img3.png";
 import img3 from "../assets/images/imgg@2x.png";
 
@@ -36,7 +35,7 @@ const PropertyShowcase: React.FC = () => {
     },
   ];
 
-  const [activeCards, setActiveCards] = useState<number[]>([0, 1, 2]);
+  // const [activeCards, setActiveCards] = useState<number[]>([0, 1, 2]);
 
   return (
     <div className="w-full min-h-screen bg-gray-50 py-6">
@@ -55,7 +54,7 @@ const PropertyShowcase: React.FC = () => {
                 }}
               >
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               </div>
 
               {/* Content */}
