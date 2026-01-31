@@ -25,7 +25,7 @@ const Dashboard = () => {
 
         <section className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 items-stretch">
           <section className="bg-white border border-[#E4E4E4] rounded-2xl flex-1 flex flex-col w-full">
-            <section className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-[#E4E4E4] p-4 flex-shrink-0 gap-4">
+            <section className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-[#E4E4E4] p-4 shrink-0 gap-4">
               <span className="flex flex-col gap-2 sm:gap-3 w-full sm:w-auto">
                 <h2 className="text-[#191919] text-[16px] sm:text-[18px] md:text-[20px] font-semibold">
                   Sales Overview
@@ -39,13 +39,13 @@ const Dashboard = () => {
                   View Transactions
                 </button>
                 <span className="flex items-center justify-between gap-2 sm:gap-3 flex-wrap">
-                  <button className="bg-[#FFFFFF] rounded-lg text-[#3D3D3D] font-normal text-sm px-3 sm:px-4 py-2 flex-1 min-w-[80px] text-center">
+                  <button className="bg-[#FFFFFF] rounded-lg text-[#3D3D3D] font-normal text-sm px-3 sm:px-4 py-2 flex-1 min-w-20 text-center">
                     1 Week
                   </button>
-                  <button className="bg-[#FFFFFF] rounded-lg text-[#3D3D3D] font-normal text-sm px-3 sm:px-4 py-2 flex-1 min-w-[80px] text-center">
+                  <button className="bg-[#FFFFFF] rounded-lg text-[#3D3D3D] font-normal text-sm px-3 sm:px-4 py-2 flex-1 min-w-20 text-center">
                     1 Month
                   </button>
-                  <button className="bg-[#F5F5F5] px-4 sm:px-6 py-2 rounded-lg text-[#3D3D3D] font-semibold text-sm flex-1 min-w-[80px] text-center">
+                  <button className="bg-[#F5F5F5] px-4 sm:px-6 py-2 rounded-lg text-[#3D3D3D] font-semibold text-sm flex-1 min-w-20 text-center">
                     1 Year
                   </button>
                 </span>
@@ -58,7 +58,7 @@ const Dashboard = () => {
                 </button>
                 <div className="flex-1 h-full w-full">
                   <div className="w-full overflow-x-auto">
-                    <div className="min-w-[600px] lg:min-w-0">
+                    <div className="min-w-150 lg:min-w-0">
                       <BarChartWithMultiXAxis />
                     </div>
                   </div>

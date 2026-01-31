@@ -93,13 +93,13 @@ const Header: React.FC = () => {
             {/* Profile Tooltip */}
             {showProfileTooltip && (
               <div className="absolute top-full right-0 mt-2 z-50">
-                <div className="bg-gray-900 text-white rounded-lg shadow-lg p-4 min-w-[220px]">
+                <div className="bg-gray-900 text-white rounded-lg shadow-lg p-4 min-w-55">
                   {/* Profile info */}
                   <div className="flex flex-col gap-3 mb-3">
                     <p className="font-semibold text-sm md:text-base">
                       {profileName}
                     </p>
-                    <p className="text-xs text-gray-300 truncate max-w-[160px]">
+                    <p className="text-xs text-gray-300 truncate max-w-40">
                       {profileEmail}
                     </p>
                   </div>

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface CalendarProps {
   onClose: () => void;
@@ -113,7 +113,7 @@ export default function Calendar({ onClose }: CalendarProps) {
       {/* Overlay */}
       <div
         className={`
-          fixed inset-0 bg-black z-[9998]
+          fixed inset-0 bg-black z-9998
           transition-opacity duration-300 ease-in-out
           ${isClosing ? "opacity-0" : "opacity-50"}
         `}
@@ -122,7 +122,7 @@ export default function Calendar({ onClose }: CalendarProps) {
 
       {/* Calendar Modal */}
       <div
-        className="fixed inset-0 flex items-start justify-end p-4 z-[9999]"
+        className="fixed inset-0 flex items-start justify-end p-4 z-9999"
         onClick={handleClose}
       >
         <div
